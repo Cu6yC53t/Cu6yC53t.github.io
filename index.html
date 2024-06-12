@@ -21,7 +21,22 @@
 
     gtag('config', 'G-PYVRSFMDRL');
   </script>
+  <script>
+    function updateSceneGeneralisation() {
+      var task = document.getElementById("single-menu-task").value;
+      var method = document.getElementById("single-menu-method").value;
 
+      console.log("Scene Generalisation", task, method)
+
+      const locations = [1, 2, 3];
+      locations.forEach(loc => {
+          const videoElement = document.getElementById(`scene-generalisation-result-video-loc${loc}`);
+          videoElement.src = `media/videos/results/${task}_${method}_loc${loc}_5x_comp.mp4`;
+          videoElement.playbackRate = 1.0;
+          videoElement.play();
+});
+    }
+  </script>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
@@ -109,8 +124,9 @@
   <!-- </div> -->
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
+<section class="section">
+<div class="container is-max-widescreen">
+    <h2 class="title is-3">Tasks</h2>
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
@@ -167,9 +183,72 @@
 </section>
 <h2 class="subtitle has-text-centered">
 </br>
-  We trained policies on 8 real-world tasks with a total of 800+ demonstrations and 8000+ evaluations.
+  We collected in total of 800+ demonstrations across 8 real-world tasks.
 </h2>
 
+<section class="section">
+<div class="container is-max-widescreen">
+    <div class="rows">
+    <h2 class="title is-3">Results</h2>
+      <h3 class="title is-4">Scene Generalisation</h3>
+      <div class="columns">
+        <div class="column has-text-centered">
+          Task
+          <div class="select is-small">
+            <select id="single-menu-task" onchange="updateSceneGeneralisation()">
+            <option value="place_cube_in_drawer">Put Cube in Drawer</option>
+            <option value="sweep_coffee_beans">Sweep Coffee Beans</option>
+            </select>
+          </div>
+          trained with 
+          <div class="select is-small">     
+            <select id="single-menu-method" onchange="updateSceneGeneralisation()">
+            <option value="greenaug_rand" selected="selected">GreenAug-Rand</option>
+            </select>
+          </div>
+          , evaluated on three novel locations.
+        </div>
+      </div>
+      </br>
+      </br>
+    <div class="columns">
+        <div class="column has-text-centered">
+        Train Scene
+        <img src="./media/images/place_cube_in_drawer.png">
+        </br>
+        </br>
+      </div>
+        <div class="column has-text-centered">
+          Test Scene 1
+          <video id="scene-generalisation-result-video-loc1" muted autoplay loop controls width="100%">
+        <source src="media/videos/results/place_cube_in_drawer_greenaug_rand_loc1_5x_comp.mp4"
+                type="video/mp4">
+      </video>
+          Test Scene 3
+          <video id="scene-generalisation-result-video-loc3" muted autoplay loop controls width="100%">
+        <source src="media/videos/results/place_cube_in_drawer_greenaug_rand_loc3_5x_comp.mp4"
+                type="video/mp4">
+      </video>
+      </div>
+        <div class="column has-text-centered">
+          Test Scene 2
+          <video id="scene-generalisation-result-video-loc2" muted autoplay loop controls width="100%">
+        <source src="media/videos/results/place_cube_in_drawer_greenaug_rand_loc2_5x_comp.mp4"
+                type="video/mp4">
+      </video>
+      </div>
+        <!-- <div class="column has-text-centered">
+          Novel Scene 3
+        </br>
+        </br>
+          <video id="scene-generalisation-result-video-loc3" muted autoplay loop controls width="100%">
+        <source src="media/videos/results/place_cube_in_drawer_greenaug_rand_loc3_5x_comp.mp4"
+                type="video/mp4">
+      </video>
+      </div> -->
+</div>
+</div>
+</section>
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
