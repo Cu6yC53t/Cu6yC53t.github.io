@@ -21,34 +21,7 @@
 
     gtag('config', 'G-PYVRSFMDRL');
   </script>
-  <script>
-    function updateSceneGeneralisation() {
-      var task = document.getElementById("single-menu-task").value;
-      var method = document.getElementById("single-menu-method").value;
 
-      console.log("Scene Generalisation", task, method)
-
-      const locations = ["loc1", "loc2", "loc3"];
-      locations.forEach(loc => {
-        const videoElement = document.getElementById(`scene-generalisation-result-video-${loc}`);
-        videoElement.src = `media/videos/results/${task}_${method}_${loc}_5x_comp.mp4`;
-        videoElement.playbackRate = 1.0;
-        videoElement.play();
-      });
-      const videoElement = document.getElementById("scene-generalisation-result-video-train");
-      // Check if train loc is green screen or not
-      greenaug_methods = ["greenaug_rand", "greenaug_gen", "greenaug_mask"];
-      if (greenaug_methods.includes(method)) {
-        train_video_file = `media/videos/results/${task}_green_screen_5x_comp.mp4`;;
-      } else {
-        train_video_file = `media/videos/results/${task}_non_green_screen_5x_comp.mp4`;;
-      }
-      videoElement.src = train_video_file;
-      videoElement.playbackRate = 1.0;
-      videoElement.play();
-
-    }
-  </script>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -221,8 +194,8 @@
           <div class="column has-text-centered">
             Task
             <div class="select is-small">
-              <select id="single-menu-task" onchange="updateSceneGeneralisation()">
-                <option value="open_drawer">Open Drawer</option>
+              <select id="single-menu-task"">
+                <option value=" open_drawer">Open Drawer</option>
                 <option value="place_cube_in_drawer" selected="selected">Place Cube in Drawer</option>
                 <option value="sweep_coffee_beans">Sweep Coffee Beans</option>
                 <option value="take_lid_off_saucepan">Take Lid off Saucepan</option>
@@ -234,8 +207,8 @@
             </div>
             trained with
             <div class="select is-small">
-              <select id="single-menu-method" onchange="updateSceneGeneralisation()">
-                <option value="greenaug_rand" selected="selected">GreenAug-Rand</option>
+              <select id="single-menu-method"">
+                <option value=" greenaug_rand" selected="selected">GreenAug-Rand</option>
                 <option value="greenaug_gen">GreenAug-Gen</option>
                 <option value="greenaug_mask">GreenAug-Mask</option>
                 <option value="no_aug">No Augmentation</option>
@@ -249,40 +222,31 @@
         <div class="columns">
           <div class="column has-text-centered">
             Train Scene
-            <!-- <video id="scene-generalisation-result-video-train" muted autoplay loop controls width="100%">
-        <source src="media/videos/results/place_cube_in_drawer_green_screen_5x_comp.mp4"
-                type="video/mp4"> -->
-            <div class="publication-video">
-              <iframe width="100%"
-                src="https://www.youtube-nocookie.com/embed/3OEvvgsq5Fo?si=DZgm8s6Kwt9_AFMh&autoplay=1&loop=1&playlist=3OEvvgsq5Fo&mute=1"
-                title="YouTube video player" frameborder="0"
+            <div class="task-video">
+              <iframe id="train-scene" width="100%" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            </video>
             Test Scene 2
-            <video id="scene-generalisation-result-video-loc2" muted autoplay loop controls width="100%">
-              <source src="media/videos/results/place_cube_in_drawer_greenaug_rand_loc2_5x_comp.mp4" type="video/mp4">
-            </video>
+            <div class="task-video">
+              <iframe id="test-scene-2" , width="100%" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           </div>
           <div class="column has-text-centered">
             Test Scene 1
-            <video id="scene-generalisation-result-video-loc1" muted autoplay loop controls width="100%">
-              <source src="media/videos/results/place_cube_in_drawer_greenaug_rand_loc1_5x_comp.mp4" type="video/mp4">
-            </video>
+            <div class="task-video">
+              <iframe id="test-scene-1" width="100%" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             Test Scene 3
-            <video id="scene-generalisation-result-video-loc3" muted autoplay loop controls width="100%">
-              <source src="media/videos/results/place_cube_in_drawer_greenaug_rand_loc3_5x_comp.mp4" type="video/mp4">
-            </video>
-            <!-- <div class="column has-text-centered">
-          Novel Scene 3
-        </br>
-        </br>
-          <video id="scene-generalisation-result-video-loc3" muted autoplay loop controls width="100%">
-        <source src="media/videos/results/place_cube_in_drawer_greenaug_rand_loc3_5x_comp.mp4"
-                type="video/mp4">
-      </video>
-      </div> -->
+            <div class="task-video">
+              <iframe id="test-scene-3" width="100%" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
   </section>
