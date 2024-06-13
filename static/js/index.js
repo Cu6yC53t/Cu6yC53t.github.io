@@ -20,7 +20,7 @@ function appendQueryParams(url) {
   const videoId = baseUrl.split('/').pop();
 
   // Create new query parameters
-  const newParams = `autoplay=1&loop=1&playlist=${videoId}&mute=1`;
+  const newParams = `autoplay=1&loop=1&playlist=${videoId}&mute=1&rel=0`;
 
   // Return the new URL with the appended query parameters
   return `${baseUrl}?${queryString}&${newParams}`;
@@ -29,14 +29,14 @@ function appendQueryParams(url) {
 
 function setResultVideo(task, method, videoData) {
   const videoUrls = videoData[`${task}/${method}`];
-  if (!videoUrls) {
-    console.error('Video URLs not found for:', `${task}/${method}`);
-    return;
-  }
 
   ids = ["#train-scene", "#test-scene-1", "#test-scene-2", "#test-scene-3"];
   for (i = 0; i < ids.length; i++) {
-    $(ids[i]).attr("src", appendQueryParams(videoUrls[i]));
+    if (!videoUrls) {
+      $(ids[i]).attr('src', 'about:blank');
+    } else {
+      $(ids[i]).attr("src", appendQueryParams(videoUrls[i]));
+    }
   }
 }
 
