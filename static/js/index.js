@@ -32,7 +32,7 @@ function setResultVideo(task, method, videoData) {
 
   ids = ["#train-scene", "#test-scene-1", "#test-scene-2", "#test-scene-3"];
   for (i = 0; i < ids.length; i++) {
-    if (!videoUrls) {
+    if (!videoUrls[i]) {
       $(ids[i]).attr('src', 'about:blank');
     } else {
       $(ids[i]).attr("src", appendQueryParams(videoUrls[i]));
