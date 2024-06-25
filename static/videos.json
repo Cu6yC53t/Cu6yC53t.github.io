@@ -1,9 +1,9 @@
 {
     "place_cube_in_drawer/greenaug_rand": [
-        "https://www.youtube-nocookie.com/embed/3OEvvgsq5Fo?si=DZgm8s6Kwt9_AFMh",
-        "https://www.youtube-nocookie.com/embed/njhu6Af2a10?si=l1BWChAwXBuY6ny-",
+        "https://www.youtube-nocookie.com/embed/E_eZKAJRAWY?si=sTOOmTtjIgMCNNuH",
         "https://www.youtube-nocookie.com/embed/1XrjWkPnDXM?si=El64OwZGTJjAhpW2",
-        "https://www.youtube-nocookie.com/embed/ftS8V5CLzT0?si=Vqsa2CHaADqPXcaa"
+        "https://www.youtube-nocookie.com/embed/ftS8V5CLzT0?si=Vqsa2CHaADqPXcaa",
+        "https://www.youtube-nocookie.com/embed/njhu6Af2a10?si=l1BWChAwXBuY6ny-"
     ],
     "place_cube_in_drawer/no_aug": [
         null,
@@ -12,9 +12,9 @@
         "https://www.youtube-nocookie.com/embed/lYvQerGmb0I?si=JJN7rkBBL979Qq7m"
     ],
     "sweep_coffee_beans/greenaug_rand": [
-        "https://www.youtube-nocookie.com/embed/D3A0pEJu8Hk?si=7rDnWVKGbrHrHUO8",
-        "https://www.youtube-nocookie.com/embed/7-Z6mgM8y-o?si=46dzxRkE97x6kcZo",
+        "https://www.youtube-nocookie.com/embed/h27x0sKW0_Q?si=OGuUHc9sjP8ic7vw",
         "https://www.youtube-nocookie.com/embed/Z5cIMVmrcMs?si=Q-_miw7hiN8MEIVq",
+        "https://www.youtube-nocookie.com/embed/7-Z6mgM8y-o?si=46dzxRkE97x6kcZo",
         "https://www.youtube-nocookie.com/embed/oHS_wfWkTNE?si=U803jGUnsmP1ezRH"
     ],
     "take_lid_off_saucepan/greenaug_rand": [
@@ -28,5 +28,17 @@
         "https://www.youtube-nocookie.com/embed/O2-6x45pjBI?si=axeAiSwDJ2_Ui8x1",
         "https://www.youtube-nocookie.com/embed/DePTT7vcpU4?si=FLtngYoHKc3UpWFv",
         "https://www.youtube-nocookie.com/embed/qNKj_5oshD8?si=vaglXuhzUG39pBcv"
+    ],
+    "place_bear_in_basket/greenaug_rand": [
+        "https://www.youtube-nocookie.com/embed/EmntZg4fRL0?si=_1aeHvbDdG-htuMf",
+        "https://www.youtube-nocookie.com/embed/hL8GeSf8YH0?si=-MnAMdesKrLeEUd_",
+        "https://www.youtube-nocookie.com/embed/sLK5m3Zitlw?si=dxl5qRUsFL4X9pyN",
+        "https://www.youtube-nocookie.com/embed/m3hX58Qxo64?si=eZFIxlLixBN9CCIU"
+    ],
+    "slide_book_and_pickup/greenaug_rand": [
+        "https://www.youtube-nocookie.com/embed/s3EUbnY-W0k?si=GZGtssmtBMAQtKK1",
+        "https://www.youtube-nocookie.com/embed/nTbsI3T2zLU?si=oYLwyx0YESIIoLTd",
+        "https://www.youtube-nocookie.com/embed/ixzl7_T21Jc?si=Bspft4BKbCbWVKGs",
+        "https://www.youtube-nocookie.com/embed/6m6hojfGZDo?si=cF2b1drNDCOZLQhZ"
     ]
 }
