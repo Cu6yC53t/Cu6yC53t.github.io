@@ -29,6 +29,12 @@
         "https://www.youtube-nocookie.com/embed/t44ug95IDeY?si=3QIVluCooWrcO-Nm",
         "https://www.youtube-nocookie.com/embed/entURPht6f4?si=3pVKZOMYxDxIxhX6"
     ],
+    "take_lid_off_saucepan/no_aug": [
+        null,
+        null,
+        "https://www.youtube-nocookie.com/embed/kylaS9qV_vo?si=PaWmc0oeFRkeVj8E",
+        "https://www.youtube-nocookie.com/embed/1lssXm-X9d0?si=NOAqD1HN1NDQqUOt"
+    ],
     "place_jeans_in_basket/greenaug_rand": [
         "https://www.youtube-nocookie.com/embed/NndLsWIQLAQ?si=XYthpLmF8zn9bkLi",
         "https://www.youtube-nocookie.com/embed/O2-6x45pjBI?si=axeAiSwDJ2_Ui8x1",
@@ -47,16 +53,34 @@
         "https://www.youtube-nocookie.com/embed/sLK5m3Zitlw?si=dxl5qRUsFL4X9pyN",
         "https://www.youtube-nocookie.com/embed/m3hX58Qxo64?si=eZFIxlLixBN9CCIU"
     ],
+    "place_bear_in_basket/no_aug": [
+        null,
+        "https://www.youtube-nocookie.com/embed/qQJICT0COaU?si=ZBJ8O3P3RzpfyNU2",
+        "https://www.youtube-nocookie.com/embed/PxmzfRPe4KM?si=wMvznqvmSOuBpFGq",
+        "https://www.youtube-nocookie.com/embed/AxlL176rIQo?si=mTaArcPnUh74r6v4"
+    ],
     "slide_book_and_pickup/greenaug_rand": [
         "https://www.youtube-nocookie.com/embed/s3EUbnY-W0k?si=GZGtssmtBMAQtKK1",
         "https://www.youtube-nocookie.com/embed/nTbsI3T2zLU?si=oYLwyx0YESIIoLTd",
         "https://www.youtube-nocookie.com/embed/ixzl7_T21Jc?si=Bspft4BKbCbWVKGs",
         "https://www.youtube-nocookie.com/embed/6m6hojfGZDo?si=cF2b1drNDCOZLQhZ"
     ],
+    "slide_book_and_pickup/no_aug": [
+        null,
+        "https://www.youtube-nocookie.com/embed/0nlknYtz2R0?si=uAskas8yBzzV2_li",
+        "https://www.youtube-nocookie.com/embed/AeFwQEOw0zY?si=9M7pcq24TuVOuufB",
+        "https://www.youtube-nocookie.com/embed/KQVbsZodK7w?si=XCDdso1bS5orBgna"
+    ],
     "stack_cups/greenaug_rand": [
         "https://www.youtube-nocookie.com/embed/N1MCddrRJ3I?si=jICFuUbR6zgfyWFe",
         "https://www.youtube-nocookie.com/embed/hf_mkNJyCUg?si=0KoIEFCB2C7oczl7",
         "https://www.youtube-nocookie.com/embed/1NQDG3EqC38?si=5dyRxesOaiZJZmSd",
         "https://www.youtube-nocookie.com/embed/n9-v7Q5ujEU?si=4SL8PKB2MeSWLfPA"
+    ],
+    "stack_cups/no_aug": [
+        null,
+        "https://www.youtube-nocookie.com/embed/CMrPjt_I0Dw?si=x-DkW0c2o1AY7jFz",
+        "https://www.youtube-nocookie.com/embed/8zmIN3HPv3U?si=m9wcLJ6tNliU_jax",
+        null
     ]
 }
