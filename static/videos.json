@@ -1,4 +1,16 @@
 {
+    "open_drawer/greenaug_rand": [
+    "https://www.youtube-nocookie.com/embed/UdQRWyGO23Y?si=N62sj6d_qt9TmYbm",
+    "https://www.youtube-nocookie.com/embed/OLnzy_L1uz4?si=bOqNwjVQwJ0ZXcub",
+    "https://www.youtube-nocookie.com/embed/N1DFG750l2s?si=hWsjrO1w8QubKSpU",
+    "https://www.youtube-nocookie.com/embed/UXpTCLNBpHU?si=bNWNAiji19rULHte"
+    ],
+    "open_drawer/no_aug": [
+        null,
+        null,
+        null,
+        null
+    ],
     "place_cube_in_drawer/greenaug_rand": [
         "https://www.youtube-nocookie.com/embed/E_eZKAJRAWY?si=sTOOmTtjIgMCNNuH",
         "https://www.youtube-nocookie.com/embed/1XrjWkPnDXM?si=El64OwZGTJjAhpW2",
@@ -31,7 +43,7 @@
     ],
     "take_lid_off_saucepan/no_aug": [
         null,
-        null,
+        "https://www.youtube-nocookie.com/embed/3tNqJjU_MZE?si=9DTmcTunq29YqfuG",
         "https://www.youtube-nocookie.com/embed/kylaS9qV_vo?si=PaWmc0oeFRkeVj8E",
         "https://www.youtube-nocookie.com/embed/1lssXm-X9d0?si=NOAqD1HN1NDQqUOt"
     ],
@@ -81,6 +93,6 @@
         null,
         "https://www.youtube-nocookie.com/embed/CMrPjt_I0Dw?si=x-DkW0c2o1AY7jFz",
         "https://www.youtube-nocookie.com/embed/8zmIN3HPv3U?si=m9wcLJ6tNliU_jax",
-        null
+        "https://www.youtube-nocookie.com/embed/qBrBPyzCXW8?si=-lZNArcolxtbFGR_"
     ]
 }
